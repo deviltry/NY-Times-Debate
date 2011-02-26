@@ -1,0 +1,8 @@
+This is the beginning of everything.
+The index is a simple tab system that can load multiple different php or html files.
+We can use this system to separate tasks.
+The comments.html is just html code I took from the website and isolated the COMMENT Divs,
+the css needs to cleaned up.
+
+todo: Clean up css
+todo: Create database and start populating with the form
