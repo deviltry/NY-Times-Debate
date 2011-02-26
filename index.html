@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Tabs - Content via Ajax</title>
+	<link type="text/css" href="css/jquery-ui-1.8.10.custom.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" type="text/css" href="http://graphics8.nytimes.com/css/common/global.css">
+	<style type="text/css">
+        @import url(http://graphics8.nytimes.com/css/standalone/community/articles/screen/overflow.css);
+    </style>
+	
+	<script src="http://jquery.com/src/jquery-latest.js"></script>
+	
+	<script src="js/jquery.ui.core.js"></script>
+	<script src="js/jquery.ui.widget.js"></script>
+	<script src="js/jquery.ui.tabs.js"></script>
+	
+	<script>
+	$(function() {
+		$( "#tabs" ).tabs({
+			ajaxOptions: {
+				error: function( xhr, status, index, anchor ) {
+					$( anchor.hash ).html(
+						"Couldn't load this tab. We'll try to fix this as soon as possible. " +
+						"If this wouldn't be a demo." );
+				}
+			}
+		});
+	});
+	</script>
+</head>
+<body>
+
+
+<div id="page">
+<div id="masthead">
+
+
+
+<div id="aColumn">
+<div id="article">
+
+</div>
+<div id="commentsWell">
+<div id="readerComments">
+
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Statistics</a></li>
+		<li><a href="comments.html">User Comments</a></li>
+		<li><a href="debate.html">Debate</a></li>
+		
+	</ul>
+	<div id="tabs-1">
+		<p>We can use this tab to load statistics</p>
+	</div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+</body>
+</html>
