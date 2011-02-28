@@ -1,0 +1,93 @@
+body { 
+font-family: Arial, Verdana; 
+font-size: 12px;
+} 
+
+.comment_box_outside { 
+/* background-color: #CCC; */
+font-family: Arial, Verdana; 
+border-bottom: black 1px solid;
+padding-bottom: 10px;
+padding-top: 10px;
+width: 520px;
+overflow:auto;
+} 
+
+.comment_header { 
+/* background-color: #666; */
+color: #CCC; 
+font-family: Arial, Verdana; 
+BORDER: #000000 1px solid; 
+width: 520px;} 
+
+.user{
+/* background-color: green; */
+color: black;
+float: left;
+width: 80px;
+}
+
+.username {
+font-weight:bold;
+}
+
+.comment_text {
+font-color: black;
+float: left;
+width: 400px;
+padding-left:10px;
+
+}
+
+.timestamp {
+font-size: 9px;
+color: #666;
+}
+
+
+
+.buttons
+{
+	/* background: red; */
+	display:inline;
+	margin-left: 80px;
+}
+
+.userdata
+{
+
+	margin-left: 80px;
+}
+
+.vote_link{
+a {
+  border: 2px outset;
+  padding: 12px;
+  text-decoration: underline;
+}
+
+.feedback {
+margin-left:100px;
+color:blue;
+float:right;
+}
+
+
+#submit_comments_box {
+width: 520px;
+border: red 1px solid;
+}
+
+
+
+.display_name{
+float:left;
+}
+
+.location{
+float:left;}
+
+.post_comment{
+font-family: Arial, Verdana; 
+font-size: 12px;
+}
